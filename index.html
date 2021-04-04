@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
@@ -64,6 +64,32 @@
 
         }
 
+        footer {
+            
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+          
+        }
+        footer div {
+            background-color: white;
+        }
+        footer h3 {
+            text-align: end;
+            font-weight: bolder;
+  
+
+        }
+
+        .icons {
+        padding-right: 10px;
+        width: 180px;
+        justify-content: space-between;
+        display: flex;
+       
+        }
+
         @media only screen and (max-width: 1600px) {
 
             h3,
@@ -78,14 +104,14 @@
 </head>
 
 <body>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 
     <h3>API de Localidades</h3>
     <div>
         <form>
             <label for="regiao">Região</label>
-            <select id="regioes" name="regiao">
-                <option id="">Selecione</option>
+            <select id="regiao">
+                <option value="0" >Selecione</option>
                 
             </select>
             
@@ -99,7 +125,8 @@
                 <option>Selecione</option>
             </select>
 
-            <input type="submit" value="Enviar">
+            <input  type="submit" value="Enviar" onclick="mostrarUf()">
+         
         </form>
     </div>
 
@@ -123,7 +150,26 @@
         </p>
 
     </div>
-
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Guilherme Silva | Dev Front End SENAI</h3>
+        </div>
+        <div class="icons">
+          <a href="https://github.com/mguilherm" target="_blank">
+            <img src="./img/github (1).svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/marcos-guilherme-barbosa-da-silva-8313121a4/"
+            target="_blank"
+          >
+            <img src="./img/linkedin (1).svg" alt=""
+          /></a>
+          <a href="mailto:marcosguilherme.silva@outlook.com" target="_blank">
+            <img src="./img/mail (1).svg" alt=""
+          /></a>
+        </div>
+    
+    </footer>
 </body>
 
 </html>
